@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.header{
+    height: 100vh;
+}
+
+
+.contenedorNav{
+    display:flex;
+    justify-content:space-between;
+    /*flex-wrap: wrap;*/
+    background-color: rgb(69, 69, 69);
+    padding:1.2rem 5rem;
+    height: 12%;
+}
+
+.contenedorLogo{
+    width: 20%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo img{
+    width: 90px;
+    object-fit: cover;
+    margin-right: 0%;
+}
+
+.contenedorLogo h2{
+    text-align: left;
+    color:whitesmoke;
+    font-size: 20px;
+}
+
+.navegacion ul{
+    height: 100%;/*la navegacion es el padre*/
+    list-style: none;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.linkNav{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(141, 138, 138);
+   
+}
+
+.linkNav:hover{
+    color: rgb(244, 232, 232);
+}
+
+a.conferencia{
+    text-decoration: none;
+    color: white;
+}
+
+a.ticket{
+    text-decoration: none;
+    color: #8aae67;
+}
+
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#4d4b4b9c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.hijoConferencia{
+    padding-right: 5rem;
+ 
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align: right;
+}
+
+.hijoConferencia h1{
+    color:whitesmoke;
+   
+}
+
+.textoConferencia{
+
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 400;/*negrita*/
+    color:whitesmoke;
+    text-align: right;
+    margin-bottom: 5%;
+}
+
+.btnConferencia{
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    color: whitesmoke;
+    font-size: 1.0em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    margin: 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btnConferencia:hover{
+    background-color: #609130;
+    color: whitesmoke;
+}
+
+a.btnTicket{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+a.btnConferencia:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #6c8c4d;
+    border-color: #6c8c4d;
+}
+
+.oradores{
+    display: block;
+}
+
+.sectionOradores{
+    text-align: center;
+    padding: 10px;
+}
+
+.padreCards{
+    margin-top:50px;
+    text-align: center;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0px 2px 0px 2px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.card{
+    display: inline-block;
+    background-color:white;
+    text-align: left;
+    width: 30%;
+    height: 90%;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+   
+}
+
+.cardBody{
+    margin:15px;
+}
+
+.icon{
+    color:rgb(237, 29, 157);
+    font-size: 5rem;
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    
+}
+
+.honolulu {
+    display: flex;
+    gap: 3px;
+  }
+
+  .izquierda{
+    width: 50%;
+    margin-right: 0.10%;
+    background-position: justify;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+
+  .img-honolulu {
+    width: 100%;
+    height: 100%;
+  }
+
+  .derecha {
+    color: whitesmoke;
+    width: 50%;
+    margin-left: 0.10%;  
+    padding: 0.90%;
+    background-color: rgb(65, 65, 65);
+   /* display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;*/
+  }
+
+  .btnConocerMas{
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    background-color: transparent;
+    color: whitesmoke;
+    margin: 15px 5px;
+    padding: 5px;
+  }
+
+  .btnConocerMas:hover{
+    background-color: #609130;
+    color: whitesmoke;
+ }
+
+  #formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .oradores{
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  .form{
+    width: 45%;
+  }
+
+  .form input {
+    width: 45%;
+    height: 30px;
+    margin: 0.5rem;
+    display: inline-block;
+  }
+
+  .form textarea{
+    width: 94%; 
+    margin: 0.5rem;
+    display: inline-block;
+  }
+
+ 
+  .form .btn-success-submit {
+    width: 94%;
+    background-color: #81c53d;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .form p{
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .form .btn-success-submit:hover {
+    width: 94%;
+    background-color: #4c7226;
+    color: whitesmoke;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .contenedorFooter{
+    display:flex;
+    justify-content: center;
+    background-color: #224a62 ;
+    padding:1.2rem 5rem;
+    height: 12%;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+ }
+
+ .navegacionFooter{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    width: 65%;
+    
+ }
+
+ .navegacionFooter ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+ }
+
+ .listaNavFooter{
+    width: 65%;
+ }
+
+.linkNavFooter{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: whitesmoke;
+    padding: 5px;
+   
+}
+
+.linkNavFooter:hover{
+    color: rgb(244, 232, 232);
+}
+
+.itemListaFooter{
+    margin-right: 6%;
+  
+}

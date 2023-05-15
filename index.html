@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto</title>
+        <!--cargar estilos propios de manera externa-->
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--kit de fontawesome-->
+        <script src="https://kit.fontawesome.com/c538ed8188.js" crossorigin="anonymous"></script>
+    </head>
+   
+    <body class="body">
+        <header class="header">
+            <div class="contenedorNav">
+                <div class="contenedorLogo">
+                    <!--rutas absolutas y rutas relativas -->
+                    <img src="./assets/img/codoacodo-removebg.png" alt="Logo de codo a codo">
+                    <h2 class="h2Nav">Conf Bs As</h2>
+                </div>
+               
+                <nav class="navegacion">
+                    <!-- para la proxima clase vamos agrupar las anclas dentro de una lista desordenada-->
+                    <ul class="listaNav">
+                        <li class="itemLista"><a class="linkNav conferencia" href="#conferencia">La conferencia </a></li>
+                        <li class="itemLista"><a class="linkNav" href="#oradores">Los oradores</a></li>
+                        <li class="itemLista"><a class="linkNav" href="#lugarFecha">El Lugar y la Fecha</a></li>
+                        <li class="itemLista"><a class="linkNav" href="#formulario">Conviertete en Orador</a></li>
+                        <li class="itemLista"><a class="linkNav ticket" href="./pages/comprar_tickets.html">Comprar tickets</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+           
+            <!--contenedor de la imagen de ex aguas argentinas(que la vamos a poner de fondo desde css)-->
+            <section id="conferencia" class="contenedorConferencia">
+                <div class="hijoConferencia">
+                    <h1>Conf Bs As</h1>
+                    <p class="textoConferencia">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el 
+                        conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, 
+                        a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                    </p>
+                    <div>
+                        <a class="btnConferencia" href="">Quiero ser orador</a>
+                        <a class="btnConferencia btnTicket" href="">Comprar tickets</a>
+                    </div>
+                   
+                   
+                </div>
+               
+                
+            </section>
+
+        </header>
+         <!--esta es la etiqueta semantica del contenido principal de mi pagina-->
+        <main>
+           <section id="oradores" >
+            <!--ETIQUETA CONTENEDORA EN LINEA, HERMANA DEL DIV QUE ES SPAN-->
+            <div class="sectionOradores">
+                <h5>CONOCE A LOS</h5>
+                <h1>ORADORES</h1>
+            </div>
+            
+            <div class="padreCards">
+                <div class="card">
+                    <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                    <div class="cardBody">
+                        <h5 class="btn btn-warning">JavaScript</h5>
+                        <h5  class="btn btn-info">React</h5>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem, corporis magni ratione!</div>
+                    
+                </div>
+                <div class="card">
+                    <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                    <div class="cardBody">
+                        <h5 class="btn btn-warning">JavaScript</h5>
+                        <h5  class="btn btn-info">React</h5>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem, corporis magni ratione!</div>
+                </div>    
+                <div class="card">
+                    <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                    <div class="cardBody">
+                        <h5 class="btn btn-secondary">Negocios</h5>
+                        <h5 class="btn btn-danger">Startips</h5>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nulla consectetur illum voluptatibus voluptatem, corporis magni ratione!</div>
+                </div>
+            </div>
+              
+           </section>
+
+           <section id="lugarFecha" >
+            <div class="honolulu">
+                <div class="izquierda">
+                    <img src="./assets/img/honolulu.jpg" class="img-honolulu">
+                </div>
+                <div class="derecha">
+                    <h4>Bs As - Octubre</h4>
+                    <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu
+                      es
+                      la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al
+                      área
+                      urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de honolulu han formado una ciudad-
+                      condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                    <button type="button" class="btnConocerMas">Conoc&eacute; m&aacute;s</button>
+                  </div>
+            </div>
+                
+            </section>
+            <section id="formulario">
+                <div class="oradores">
+                    <h6>CONVIÉRTETE EN UN</h6>
+                    <h1>ORADOR</h1>
+                    <h6>Anotate como orador para dar una <u style="text-decoration:underline dotted">charla ignite</u>. Cuéntanos de
+                      qué quieres hablar!</h6>
+                  </div>
+                <form class="form">
+                    <div>
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="text" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="44" rows="6" placeholder="Sobre que quieres hablar?" required></textarea>
+                    </div>
+                    <p>Recuerda incluir un titulo para tu charla.</p>
+                    <div>
+                        <input type="submit" value="Enviar" class="btn-success-submit">
+                    </div>
+
+                </form>
+            </section>
+            
+        </main>
+       
+         <!--esta es la etiqueta semantica del pie de pagina-->
+        <footer class="">
+    
+
+            <nav class="contenedorFooter">
+                <div class="navegacionFooter">
+                    <ul class="listaNavFooter">
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Preguntas <br>frecuentes</a></li>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Contáctanos</a></li>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Prensa</a></li>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Conferencias</a></li>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Terminos y <br>condiciones</a></li>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">privacidad</a>
+                        <li class="itemListaFooter"><a class="linkNavFooter" href="">Estudiantes</a>
+                    </ul>
+                </div>
+            </nav>
+
+        </footer>
+  
+    </body>
+</html>
